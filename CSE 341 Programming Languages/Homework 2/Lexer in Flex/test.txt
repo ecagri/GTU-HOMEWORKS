@@ -1,0 +1,11 @@
+;;helloword.g++
+(deffun sumup (x)
+    (if (equal x 0)
+    1
+    (+ x (sumup (- x 1)))
+    )
+)
+
+(list 1 2 123f12)
+
+;;This txt file is created for test.

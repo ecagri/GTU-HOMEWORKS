@@ -1,0 +1,1 @@
+s2 = {"4.day of April", "5.day of May", "6.day of June"}

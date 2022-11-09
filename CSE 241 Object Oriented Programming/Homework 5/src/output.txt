@@ -1,0 +1,466 @@
+
+  A B C D E F G H I
+1       P P P      
+2       P P P      
+3       P P P      
+4 P P P P P P P P P
+5 P P P P . P P P P
+6 P P P P P P P P P
+7       P P P      
+8       P P P      
+9       P P P      
+
+MENU
+
+1- PLAY AUTO ONE MOVE
+2- PLAY AUTO ALL MOVES
+3- PLAY USER ONE MOVE
+4- PLAY USER ALL MOVES
+5- SHOW SCORE
+6- PRINT
+7- EXIT
+YOUR OPTION: 
+  A B C D E F G H I
+1       P P P      
+2       P P P      
+3       P P P      
+4 P P P P P P P P P
+5 P P P P P . . P P
+6 P P P P P P P P P
+7       P P P      
+8       P P P      
+9       P P P      
+
+  A B C D E F G H I
+1       P P P      
+2       P P P      
+3       P P P      
+4 P P P P P P P P P
+5 P P P P P . P . .
+6 P P P P P P P P P
+7       P P P      
+8       P P P      
+9       P P P      
+
+  A B C D E F G H I
+1       P P P      
+2       P P P      
+3       P P P      
+4 P P P P P P P P P
+5 P P P . . P P . .
+6 P P P P P P P P P
+7       P P P      
+8       P P P      
+9       P P P      
+
+  A B C D E F G H I
+1       P P P      
+2       P P P      
+3       P P P      
+4 P P P P P P P P P
+5 P . . P . P P . .
+6 P P P P P P P P P
+7       P P P      
+8       P P P      
+9       P P P      
+
+  A B C D E F G H I
+1       P P P      
+2       P P P      
+3       P P P      
+4 P P P P P P P P P
+5 P . . P . . . P .
+6 P P P P P P P P P
+7       P P P      
+8       P P P      
+9       P P P      
+
+  A B C D E F G H I
+1       P P P      
+2       P P P      
+3       P . P      
+4 P P P P . P P P P
+5 P . . P P . . P .
+6 P P P P P P P P P
+7       P P P      
+8       P P P      
+9       P P P      
+
+  A B C D E F G H I
+1       P . P      
+2       P . P      
+3       P P P      
+4 P P P P . P P P P
+5 P . . P P . . P .
+6 P P P P P P P P P
+7       P P P      
+8       P P P      
+9       P P P      
+
+  A B C D E F G H I
+1       P . P      
+2       P . P      
+3       P P P      
+4 P P P P . P P P P
+5 P . P . . . . P .
+6 P P P P P P P P P
+7       P P P      
+8       P P P      
+9       P P P      
+
+  A B C D E F G H I
+1       P . P      
+2       P . P      
+3       P P P      
+4 P P P P . P P P P
+5 P . P . P . . P .
+6 P P P P . P P P P
+7       P . P      
+8       P P P      
+9       P P P      
+
+  A B C D E F G H I
+1       P . P      
+2       P . P      
+3       . P P      
+4 P P P . . P P P P
+5 P . P P P . . P .
+6 P P P P . P P P P
+7       P . P      
+8       P P P      
+9       P P P      
+
+  A B C D E F G H I
+1       . . P      
+2       . . P      
+3       P P P      
+4 P P P . . P P P P
+5 P . P P P . . P .
+6 P P P P . P P P P
+7       P . P      
+8       P P P      
+9       P P P      
+
+  A B C D E F G H I
+1       . . P      
+2       . . P      
+3       P P P      
+4 P P P . . P P P P
+5 P . P P P . . P .
+6 P P P P P . . P P
+7       P . P      
+8       P P P      
+9       P P P      
+
+  A B C D E F G H I
+1       . . P      
+2       . . P      
+3       P P P      
+4 P P P . . P P P P
+5 P . P P P . . P .
+6 P P P . . P . P P
+7       P . P      
+8       P P P      
+9       P P P      
+
+  A B C D E F G H I
+1       . . P      
+2       . . P      
+3       P P P      
+4 P P P . P . . P P
+5 P . P P P . . P .
+6 P P P . . P . P P
+7       P . P      
+8       P P P      
+9       P P P      
+
+  A B C D E F G H I
+1       . . P      
+2       . . P      
+3       P P P      
+4 P P P . P . . P P
+5 P . P P P . . P .
+6 P . . P . P . P P
+7       P . P      
+8       P P P      
+9       P P P      
+
+  A B C D E F G H I
+1       . . P      
+2       . P P      
+3       P . P      
+4 P P P . . . . P P
+5 P . P P P . . P .
+6 P . . P . P . P P
+7       P . P      
+8       P P P      
+9       P P P      
+
+  A B C D E F G H I
+1       . . P      
+2       . P P      
+3       P . P      
+4 P P P . . . . P P
+5 P . P P P . . P .
+6 P . . P . P . P P
+7       P P P      
+8       P . P      
+9       P . P      
+
+  A B C D E F G H I
+1       . . P      
+2       . P P      
+3       P . P      
+4 P P P P . . . P P
+5 P . P . P . . P .
+6 P . . . . P . P P
+7       P P P      
+8       P . P      
+9       P . P      
+
+  A B C D E F G H I
+1       . . P      
+2       . P P      
+3       P . P      
+4 P P . . P . . P P
+5 P . P . P . . P .
+6 P . . . . P . P P
+7       P P P      
+8       P . P      
+9       P . P      
+
+  A B C D E F G H I
+1       . . P      
+2       . P P      
+3       P . P      
+4 P P . . P . . P P
+5 P . P . P P . P .
+6 P . . . . . . P P
+7       P P .      
+8       P . P      
+9       P . P      
+
+  A B C D E F G H I
+1       . . P      
+2       . P P      
+3       P . P      
+4 . . P . P . . P P
+5 P . P . P P . P .
+6 P . . . . . . P P
+7       P P .      
+8       P . P      
+9       P . P      
+
+  A B C D E F G H I
+1       . . P      
+2       . P P      
+3       P . P      
+4 . . P . P . . P P
+5 P . P P . . . P .
+6 P . . . . . . P P
+7       P P .      
+8       P . P      
+9       P . P      
+
+  A B C D E F G H I
+1       . . P      
+2       . P P      
+3       P . P      
+4 . . P . P . P . .
+5 P . P P . . . P .
+6 P . . . . . . P P
+7       P P .      
+8       P . P      
+9       P . P      
+
+  A B C D E F G H I
+1       . . P      
+2       . P P      
+3       P . P      
+4 . . . . P . P . .
+5 P . . P . . . P .
+6 P . P . . . . P P
+7       P P .      
+8       P . P      
+9       P . P      
+
+  A B C D E F G H I
+1       . . P      
+2       . P P      
+3       P . P      
+4 . . . . P . P P .
+5 P . . P . . . . .
+6 P . P . . . . . P
+7       P P .      
+8       P . P      
+9       P . P      
+
+  A B C D E F G H I
+1       . . P      
+2       . P P      
+3       P . P      
+4 . . . . P . P P .
+5 P . . P . . . . .
+6 P . P P . . . . P
+7       . P .      
+8       . . P      
+9       P . P      
+
+  A B C D E F G H I
+1       . . P      
+2       . P P      
+3       P . P      
+4 P . . . P . P P .
+5 . . . P . . . . .
+6 . . P P . . . . P
+7       . P .      
+8       . . P      
+9       P . P      
+
+  A B C D E F G H I
+1       . . P      
+2       . P P      
+3       P . P      
+4 P . . P P . P P .
+5 . . . . . . . . .
+6 . . P . . . . . P
+7       . P .      
+8       . . P      
+9       P . P      
+
+  A B C D E F G H I
+1       . . P      
+2       P . .      
+3       P . P      
+4 P . . P P . P P .
+5 . . . . . . . . .
+6 . . P . . . . . P
+7       . P .      
+8       . . P      
+9       P . P      
+
+  A B C D E F G H I
+1       . . P      
+2       P . .      
+3       . . P      
+4 P . . . P . P P .
+5 . . . P . . . . .
+6 . . P . . . . . P
+7       . P .      
+8       . . P      
+9       P . P      
+
+  A B C D E F G H I
+1       . . P      
+2       P . .      
+3       . . P      
+4 P . . . P . . . P
+5 . . . P . . . . .
+6 . . P . . . . . P
+7       . P .      
+8       . . P      
+9       P . P      
+
+  A B C D E F G H I
+1       . . P      
+2       P . .      
+3       . . P      
+4 P . . . P . . . P
+5 . . . P . . . . .
+6 . . P . . . . . P
+7       . P P      
+8       . . .      
+9       P . .      
+
+  A B C D E F G H I
+1       . . P      
+2       P . .      
+3       . . P      
+4 P . . . P . . . P
+5 . . . P . . . . .
+6 . . P . . . . . P
+7       P . .      
+8       . . .      
+9       P . .      
+
+  A B C D E F G H I
+1       . . P      
+2       P . .      
+3       . . P      
+4 P . . . P . . . P
+5 . . . P . . . . .
+6 . . P . . . . . P
+7       P . .      
+8       . . .      
+9       P . .      
+
+MENU
+
+1- PLAY AUTO ONE MOVE
+2- PLAY AUTO ALL MOVES
+3- PLAY USER ONE MOVE
+4- PLAY USER ALL MOVES
+5- SHOW SCORE
+6- PRINT
+7- EXIT
+YOUR OPTION: 
+|_2_||_8_||_1_|
+|_6_||_4_||_7_|
+|_5_||_0_||_3_|
+
+MENU
+
+1- PLAY AUTO ONE MOVE
+2- PLAY AUTO ALL MOVES
+3- PLAY USER ONE MOVE
+4- PLAY USER ALL MOVES
+5- SHOW SCORE
+6- PRINT
+7- EXIT
+YOUR OPTION: 
+|_1_||_2_||_3_|
+|_4_||_5_||_6_|
+|_7_||_8_||_0_|
+
+MENU
+
+1- PLAY AUTO ONE MOVE
+2- PLAY AUTO ALL MOVES
+3- PLAY USER ONE MOVE
+4- PLAY USER ALL MOVES
+5- SHOW SCORE
+6- PRINT
+7- EXIT
+YOUR OPTION: 
+ A B B C
+ A B B C
+ D E E F
+ D G H F
+ I     J
+
+MENU
+
+1- PLAY AUTO ONE MOVE
+2- PLAY AUTO ALL MOVES
+3- PLAY USER ONE MOVE
+4- PLAY USER ALL MOVES
+5- SHOW SCORE
+6- PRINT
+7- EXIT
+YOUR OPTION:  
+ C A J H
+ C A D F
+ E E D F
+ G B B  
+ I B B  
+
+MENU
+
+1- PLAY AUTO ONE MOVE
+2- PLAY AUTO ALL MOVES
+3- PLAY USER ONE MOVE
+4- PLAY USER ALL MOVES
+5- SHOW SCORE
+6- PRINT
+7- EXIT
+YOUR OPTION: 
