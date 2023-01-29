@@ -1,1 +1,0 @@
-module mips_for_test(input[31:0] Instruction, input clock, 

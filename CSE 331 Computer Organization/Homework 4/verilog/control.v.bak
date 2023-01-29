@@ -1,5 +1,0 @@
-module control(input[5:0] Opcode, output RegDst, Branch, MemRead, MemWrite, ALUSrc, RegWrite, clock, [1:0] ALUOP);
-
-
-
-endmodule

@@ -1,5 +1,0 @@
-module alu_control_unit(input[1:0] ALUOP, [5:0] function, output [2:0] ALUControl);
-
-
-
-endmodule
