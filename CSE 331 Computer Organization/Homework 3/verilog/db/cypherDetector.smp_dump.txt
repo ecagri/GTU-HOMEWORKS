@@ -1,9 +1,0 @@
-
-State Machine - |cypherDetector|control:ctrl|current
-Name current.LASTMATCH current.THIRDMATCH current.SECONDMATCH current.FIRSTMATCH current.START current.RESET 
-current.RESET 0 0 0 0 0 0 
-current.START 0 0 0 0 1 1 
-current.FIRSTMATCH 0 0 0 1 0 1 
-current.SECONDMATCH 0 0 1 0 0 1 
-current.THIRDMATCH 0 1 0 0 0 1 
-current.LASTMATCH 1 0 0 0 0 1 
