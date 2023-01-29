@@ -1,0 +1,24 @@
+module alu32(input [31:0] a, input [31:0] b, input[2:0] ALUop, input clock, output [31:0] result);
+	wire ADD, SUB, MULT, XOR, AND, OR, SLT, NOR;
+	wire[31:0] andResult;
+	wire[31:0] orResult;
+	wire[31:0] xorResult;
+	wire[31:0] norResult;
+	wire[64:0] multResult;
+	wire[31:0] arithmeticResult;
+	wire[31:0] addResult;
+	and(ADD, ~ALUop[2], ~ALUop[1], ~ALUop[0]);
+	and(SUB, ~ALUop[2], ~ALUop[1], ALUop[0]);
+	and(MULT, ~ALUop[2], ALUop[1], ~ALUop[0]);
+	and(XOR, ~ALUop[2], ALUop[1], ALUop[0]);
+	and(AND, ALUop[2], ~ALUop[1], ~ALUop[0]);
+	and(OR, ALUop[2], ~ALUop[1], ALUop[0]);
+	and(SLT, ALUop[2], ALUop[1], ~ALUop[0]);
+	and(NOR, ALUop[2], ALUop[1], ALUop[0]);
+	and32bit(a, b, andResult);
+	or32bit(a, b, orResult);
+	xor32bit(a, b, xorResult);
+	nor32bit(a, b, norResult);
+	mult32(a, b, clock, MULT, ADD, SUB, SLT, multResult, arithmeticResult); 
+	mux6x1(arithmeticResult, arithmeticResult, multResult[31:0], xorResult, andResult, orResult, arithmeticResult, norResult, ALUop, result);
+endmodule

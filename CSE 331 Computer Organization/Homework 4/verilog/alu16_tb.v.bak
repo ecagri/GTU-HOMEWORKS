@@ -1,0 +1,49 @@
+module alu16_tb();
+	reg[15:0] A;
+	reg[15:0] B;
+	reg[2:0] ALUOP;
+	wire[15:0] Result;
+	
+	alu16 alu(A, B, ALUOP, Result);
+	
+	initial begin
+		A = 16'b10110;
+		B = 16'b00101;
+		ALUOP = 3'b000;
+		
+		#50
+		
+		ALUOP = 3'b001;
+		
+		#50
+		
+		ALUOP = 3'b001;
+		
+		#50
+		
+		ALUOP = 3'b010;
+		
+		#50
+		
+		ALUOP = 3'b011;
+		
+		#50
+		
+		ALUOP = 3'b100;
+		
+		#50
+		
+		ALUOP = 3'b101;
+		
+		#50
+		
+		ALUOP = 3'b110;
+		
+		#50
+		
+		ALUOP = 3'b111;
+		
+	end
+
+
+endmodule

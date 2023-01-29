@@ -1,0 +1,93 @@
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.0.3)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- chdir('C:/Users/ccayc/OneDrive/Masaüstü/Homework_4/').
+true.
+
+?- set_prolog_flag(prompt_alternatives_on, groundness).
+
+?- consult('homework4_a').
+
+?- consult('homework4_a').
+
+?- menu.
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: 9.
+Student ID: |: cagri.
+cagri-cse101
+cagri-cse102
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: |: 8.
+Student ID: |: cagri.
+Course ID: |: cse101.
+Course Is Proper For Student.
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: |: 7.
+Course ID: |: cse102.
+cse102-z11
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: |: 6.
+cse341-z23
+cse101-z10
+cse101-z06
+cse102-z11
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: |: -1.
+
+false.
+
+?- 

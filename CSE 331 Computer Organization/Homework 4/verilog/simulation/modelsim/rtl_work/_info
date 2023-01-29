@@ -1,0 +1,185 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ccayc\OneDrive\Masaüstü\Cagri_Cayci_1901042629_HW4_Kopya\verilog\simulation\modelsim
+valu16
+IZ7@83>YkP6O[?g3;LHMH42
+VR>l=FS3zzT:fTA`I93RU;1
+Z1 dC:\Users\ccayc\OneDrive\Masaüstü\Cagri_Cayci_1901042629_HW4_Kopya\verilog\simulation\modelsim
+w1674121473
+8C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/alu16.v
+FC:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/alu16.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog -O0
+!i10b 1
+!s100 QJRAYNC]08=ZomX]4lBBS0
+!s85 0
+!s108 1674130918.426000
+!s107 C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/alu16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog|C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/alu16.v|
+!s101 -O0
+vcontrol
+IBN;CiO@35d2[I_<_Hn`j:0
+VaQaN4eWRLdUlllgL999]<3
+R1
+w1674128846
+8C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/control.v
+FC:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/control.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 26m]Y0HehJ=QEcdga=>=23
+!s85 0
+!s108 1674130918.733000
+!s107 C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog|C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/control.v|
+!s101 -O0
+vdata_memory
+I36=RjS6TNZkkB4]A0UAcm3
+VA8^HVMIQGUzJhzFfY<?9[0
+R1
+w1673879272
+8C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/data_memory.v
+FC:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/data_memory.v
+L0 40
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 59CSm[8J[OY6`4dS<h7Y=3
+!s85 0
+!s108 1674130918.650000
+!s107 C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/data_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog|C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/data_memory.v|
+!s101 -O0
+vdatapath
+IB=SHZWHZFgIB1PXJ94leE2
+ViV`;0VTLoL_gQR=^Y9i0l3
+R1
+w1674125082
+8C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/datapath.v
+FC:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/datapath.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 TYQLlD:SMLhYj:PJ^YiG<3
+!s85 0
+!s108 1674130918.345000
+!s107 C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/datapath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog|C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/datapath.v|
+!s101 -O0
+vinstruction_mem
+IIkQ;JV>SKghjUENRoK5R23
+Vb3ABEhF6TP@V7h;SWBV^`2
+R1
+w1674130366
+8C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/instruction_mem.v
+FC:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/instruction_mem.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 kbdO37daob;XkiL2mmD;D0
+!s85 0
+!s108 1674130918.892000
+!s107 C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/instruction_mem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog|C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/instruction_mem.v|
+!s101 -O0
+vmips
+I@BMS68dQ>lEe@GAi0EB[N2
+VHPQiHmEcinfSMcX?_5dfM0
+R1
+w1674130657
+8C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/mips.v
+FC:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/mips.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 69P=BzJTRE<]TH[?^DO`i1
+!s85 0
+!s108 1674130918.824000
+!s107 C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/mips.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog|C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/mips.v|
+!s101 -O0
+vmips_tb
+!i10b 1
+!s100 7bk6nmc;LODcLFhgFf7]Z2
+IXZ1^_BX;moK4X=ATcAAP91
+VHfL@J;=TiSmbe>@j83EoJ0
+R1
+w1674130691
+8C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/mips_tb.v
+FC:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/mips_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1674130918.967000
+!s107 C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/mips_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog|C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/mips_tb.v|
+!s101 -O0
+R3
+R4
+vmux8x1
+IY26_93;IY`d[fPkhFQcfa1
+VXLj1eYPV>zQSc6BG_@beP2
+R1
+w1673802206
+8C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/mux8x1.v
+FC:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/mux8x1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 oP7b@en>N=ERYOnD^`E<;3
+!s85 0
+!s108 1674130918.498000
+!s107 C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/mux8x1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog|C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/mux8x1.v|
+!s101 -O0
+vregfile16x16
+I2_dh26JXicIY5aVB8][Q63
+ViBQiomzfNgf8<OSHALMCI2
+R1
+w1674125123
+8C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/regfile16x16.v
+FC:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/regfile16x16.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 R9;OoalR<D3[FiGdDX0jj1
+!s85 0
+!s108 1674130918.566000
+!s107 C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/regfile16x16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog|C:/Users/ccayc/OneDrive/Masaüstü/Cagri_Cayci_1901042629_HW4_Kopya/verilog/regfile16x16.v|
+!s101 -O0

@@ -1,0 +1,157 @@
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.0.3)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- chdir('C:/Users/ccayc/OneDrive/Masaüstü/GTU-HOMEWORKS/CSE 341 Programming Languages/Homework 4/').
+true.
+
+?- set_prolog_flag(prompt_alternatives_on, groundness).
+
+?- consult('homework4_b').
+
+?- menu.
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: 0.
+Enter The Id: |: oguz.
+1) Handicapped
+2) No Speciality
+Your Prefer: |: 1.
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: |: 2.
+Enter The Id: |: cse151.
+Enter The Instructor ID: |: mehmet.
+Enter The Capacity Of The Course: |: 60.
+Enter The Start Hour(Without Any Minute Info, Example; 5, 13): |: 9.
+Enter The End Hour(Without Any Minute Info, Example; 5, 13): |: 11.
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: |: 7.
+Course ID: |: cse151.
+cse151-z23
+cse151-z10
+cse151-z06
+cse151-z11
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: |: 5.
+Enter Course Name: |: cse151.
+Enter Room Name: |: z11.
+Course Is Registered To The Room Succesfully.
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: |: 0.
+Enter The Id: |: mine.
+1) Handicapped
+2) No Speciality
+Your Prefer: |: 2.
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: |: 4.
+Enter Student Name: |: oguz.
+Enter Course Name: |: cse151.
+Course Is Not Proper For Student.
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: |: 4.
+Enter Student Name: |: mine.
+Enter Course Name: |: cse151.
+Student Is Registered To The Course Succesfully.
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: |: -1.
+
+false.
+
+?- room(z11, A, B, C, D).
+A = 110,
+B = [cse151],
+C = smartboard,
+D = no ;
+false.
+
+?- course(cse151, A, B, C, D, E).
+A = mehmet,
+B = 60,
+C = 9,
+D = 11,
+E = [mine] ;
+false.
+
+?- 

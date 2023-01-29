@@ -1,0 +1,66 @@
+library verilog;
+use verilog.vl_types.all;
+entity arriav_hssi_tx_pld_pcs_interface is
+    generic(
+        enable_debug_info: string  := "false";
+        is_8g_0ppm      : string  := "false";
+        pld_side_data_source: string  := "pld";
+        avmm_group_channel_index: integer := 0;
+        use_default_base_address: string  := "true";
+        user_base_address: integer := 0
+    );
+    port(
+        emsipenablediocsrrdydly: in     vl_logic_vector(0 downto 0);
+        emsiptxin       : in     vl_logic_vector(103 downto 0);
+        emsiptxspecialin: in     vl_logic_vector(12 downto 0);
+        pcs8gemptytx    : in     vl_logic_vector(0 downto 0);
+        pcs8gfulltx     : in     vl_logic_vector(0 downto 0);
+        clockinfrom8gpcs: in     vl_logic_vector(0 downto 0);
+        pld8gphfifoursttxn: in     vl_logic_vector(0 downto 0);
+        pld8gpldtxclk   : in     vl_logic_vector(0 downto 0);
+        pld8gpolinvtx   : in     vl_logic_vector(0 downto 0);
+        pld8grddisabletx: in     vl_logic_vector(0 downto 0);
+        pld8grevloopbk  : in     vl_logic_vector(0 downto 0);
+        pld8gtxboundarysel: in     vl_logic_vector(4 downto 0);
+        pld8gtxdatavalid: in     vl_logic_vector(3 downto 0);
+        pld8gtxurstpcsn : in     vl_logic_vector(0 downto 0);
+        pld8gwrenabletx : in     vl_logic_vector(0 downto 0);
+        datainfrompld   : in     vl_logic_vector(43 downto 0);
+        pmatxcmuplllock : in     vl_logic_vector(0 downto 0);
+        rstsel          : in     vl_logic_vector(0 downto 0);
+        usrrstsel       : in     vl_logic_vector(0 downto 0);
+        emsippcstxclkout: out    vl_logic_vector(2 downto 0);
+        emsiptxspecialout: out    vl_logic_vector(15 downto 0);
+        pcs8gphfifoursttx: out    vl_logic_vector(0 downto 0);
+        pcs8gpldtxclk   : out    vl_logic_vector(0 downto 0);
+        pcs8gpolinvtx   : out    vl_logic_vector(0 downto 0);
+        pcs8grddisabletx: out    vl_logic_vector(0 downto 0);
+        pcs8grevloopbk  : out    vl_logic_vector(0 downto 0);
+        pcs8gtxboundarysel: out    vl_logic_vector(4 downto 0);
+        pcs8gtxdatavalid: out    vl_logic_vector(3 downto 0);
+        dataoutto8gpcs  : out    vl_logic_vector(43 downto 0);
+        pcs8gtxurstpcs  : out    vl_logic_vector(0 downto 0);
+        pcs8gwrenabletx : out    vl_logic_vector(0 downto 0);
+        pld8gemptytx    : out    vl_logic_vector(0 downto 0);
+        pld8gfulltx     : out    vl_logic_vector(0 downto 0);
+        pld8gtxclkout   : out    vl_logic_vector(0 downto 0);
+        asynchdatain    : out    vl_logic_vector(0 downto 0);
+        reset           : out    vl_logic_vector(0 downto 0);
+        avmmaddress     : in     vl_logic_vector(10 downto 0);
+        avmmbyteen      : in     vl_logic_vector(1 downto 0);
+        avmmrstn        : in     vl_logic_vector(0 downto 0);
+        avmmclk         : in     vl_logic_vector(0 downto 0);
+        avmmread        : in     vl_logic_vector(0 downto 0);
+        avmmwrite       : in     vl_logic_vector(0 downto 0);
+        avmmwritedata   : in     vl_logic_vector(15 downto 0);
+        avmmreaddata    : out    vl_logic_vector(15 downto 0);
+        blockselect     : out    vl_logic_vector(0 downto 0)
+    );
+    attribute mti_svvh_generic_type : integer;
+    attribute mti_svvh_generic_type of enable_debug_info : constant is 1;
+    attribute mti_svvh_generic_type of is_8g_0ppm : constant is 1;
+    attribute mti_svvh_generic_type of pld_side_data_source : constant is 1;
+    attribute mti_svvh_generic_type of avmm_group_channel_index : constant is 1;
+    attribute mti_svvh_generic_type of use_default_base_address : constant is 1;
+    attribute mti_svvh_generic_type of user_base_address : constant is 1;
+end arriav_hssi_tx_pld_pcs_interface;

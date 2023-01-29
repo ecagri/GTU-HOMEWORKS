@@ -1,0 +1,179 @@
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.0.3)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- chdir('C:/Users/ccayc/OneDrive/Masaüstü/GTU-HOMEWORKS/CSE 341 Programming Languages/Homework 4/').
+true.
+
+?- set_prolog_flag(prompt_alternatives_on, groundness).
+
+?- consult('homework4_b').
+
+?- consult('homework4_b').
+
+?- menu.
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: 1.
+Enter The Id: |: ysa.
+1) Projector
+2) Smart Board
+3) No Speciality
+Your Prefer: |: 1.
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: |: 2.
+Enter The Id: |: cse241.
+Enter The Instructor ID: |: ysa.
+Enter The Capacity Of The Course: |: 95.
+Enter The Start Hour(Without Any Minute Info, Example; 5, 13): |: 10.
+Enter The End Hour(Without Any Minute Info, Example; 5, 13): |: 12.
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: |: 5.
+Enter Course Name: |: cse241.
+Enter Room Name: |: z23.
+Course Is Registered To The Room Succesfully.
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: |: -1.
+
+false.
+
+?- room(z23, A, B, C, D).
+A = 150,
+B = [cse241],
+C = projector,
+D = no ;
+false.
+
+?- menu.
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: 7.
+Course ID: |: cse241.
+cse241-z06
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: |: 6.
+cse341-z23
+cse101-z10
+cse101-z06
+cse102-z11
+cse241-z06
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: |: 4.
+Enter Student Name: |: mustafa.
+Enter Course Name: |: cse241.
+Course Is Not Proper For Student.
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: |: 4.
+Enter Student Name: |: begum.
+Enter Course Name: |: cse241.
+Student Is Registered To The Course Succesfully.
+0) Create Student
+1) Create Instructor
+2) Create Course
+3) Create Room
+4) Student Menu
+5) Course Menu
+6) Print Proper Class-Room Pairs
+7) Print Proper Rooms For Specific Class
+8) Check Student-Class Pair Proper
+9) Print Proper Classes For Specific Student
+-1) Quit
+Enter Your Option: |: -1.
+
+false.
+
+?- student(begum, X, Y).
+X = [cse241],
+Y = no ;
+false.
+
+?- course(cse241, A, B, C, D, E).
+A = ysa,
+B = 95,
+C = 10,
+D = 12,
+E = [begum] ;
+false.
+
+?- 

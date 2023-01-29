@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ccayc\OneDrive\Masaüstü\CSE331Homework2\QuartusPart\simulation\qsim
+valu32
+Z1 !s100 KA5FHVTA^Vh]bCMn?e9Af3
+Z2 Io?NPE?PA4Gnd7hAnGiWkY0
+Z3 V4PU`ZAVeSWhRXj`G]E]EZ2
+Z4 dC:\Users\ccayc\OneDrive\Masaüstü\CSE331Homework2\QuartusPart\simulation\qsim
+Z5 w1670608951
+Z6 8alu32.vo
+Z7 Falu32.vo
+L0 32
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|alu32.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1670608952.082000
+Z12 !s107 alu32.vo|
+!s101 -O0
+valu32_vlg_vec_tst
+!i10b 1
+!s100 IVQIU1a^MnYb>iE<HN>VA3
+I7`SlJYo[mDLQnnC9=8^d63
+Z13 Ve?<<M2>4VU0[G2?YB@A4[1
+R4
+w1670608950
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+L0 30
+R8
+r1
+!s85 0
+31
+!s108 1670608952.204000
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!s101 -O0
+R10

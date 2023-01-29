@@ -1,0 +1,204 @@
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.0.3)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- chdir('C:/Users/ccayc/OneDrive/Masaüstü/Homework_4/').
+true.
+
+?- set_prolog_flag(prompt_alternatives_on, groundness).
+
+?- consult('homework4_b').
+
+?- connection(canakkale, istanbul, X).
+X = 13 ;
+X = 18 ;
+X = 26 ;
+X = 22 ;
+X = 30 ;
+X = 29 ;
+false.
+
+?- connection(canakkale, gaziantep, X).
+X = 21 ;
+X = 29 ;
+X = 34 ;
+X = 24 ;
+X = 34 ;
+X = 38 ;
+X = 45 ;
+X = 28 ;
+X = 37 ;
+X = 45 ;
+X = 38 ;
+X = 37 ;
+false.
+
+?- 
+|    connection(canakkale, X, C).
+X = erzincan,
+C = 6 ;
+X = antalya,
+C = 9 ;
+X = izmir,
+C = 11 ;
+X = diyarbakir,
+C = 13 ;
+X = bursa,
+C = 11 ;
+X = istanbul,
+C = 13 ;
+X = ankara,
+C = 17 ;
+X = ankara,
+C = 14 ;
+X = rize,
+C = 17 ;
+X = rize,
+C = 19 ;
+X = van,
+C = 18 ;
+X = diyarbakir,
+C = 22 ;
+X = gaziantep,
+C = 21 ;
+X = mugla,
+C = 28 ;
+X = bursa,
+C = 28 ;
+X = ankara,
+C = 22 ;
+X = van,
+C = 26 ;
+X = diyarbakir,
+C = 30 ;
+X = gaziantep,
+C = 29 ;
+X = mugla,
+C = 36 ;
+X = bursa,
+C = 36 ;
+X = rize,
+C = 22 ;
+X = van,
+C = 21 ;
+X = diyarbakir,
+C = 25 ;
+X = istanbul,
+C = 18 ;
+X = istanbul,
+C = 26 ;
+X = van,
+C = 31 ;
+X = diyarbakir,
+C = 35 ;
+X = gaziantep,
+C = 34 ;
+X = mugla,
+C = 41 ;
+X = bursa,
+C = 41 ;
+X = gaziantep,
+C = 24 ;
+X = mugla,
+C = 31 ;
+X = bursa,
+C = 31 ;
+X = rize,
+C = 22 ;
+X = van,
+C = 31 ;
+X = diyarbakir,
+C = 35 ;
+X = gaziantep,
+C = 34 ;
+X = mugla,
+C = 41 ;
+X = bursa,
+C = 41 ;
+X = ankara,
+C = 21 ;
+X = rize,
+C = 26 ;
+X = van,
+C = 25 ;
+X = izmir,
+C = 27 ;
+X = istanbul,
+C = 22 ;
+X = istanbul,
+C = 30 ;
+X = izmir,
+C = 32 ;
+X = van,
+C = 35 ;
+X = izmir,
+C = 37 ;
+X = gaziantep,
+C = 38 ;
+X = mugla,
+C = 45 ;
+X = bursa,
+C = 41 ;
+X = van,
+C = 42 ;
+X = gaziantep,
+C = 45 ;
+X = mugla,
+C = 52 ;
+X = bursa,
+C = 36 ;
+X = gaziantep,
+C = 28 ;
+X = mugla,
+C = 35 ;
+X = istanbul,
+C = 29 ;
+X = rize,
+C = 33 ;
+X = rize,
+C = 35 ;
+X = van,
+C = 34 ;
+X = gaziantep,
+C = 37 ;
+X = mugla,
+C = 44 ;
+X = van,
+C = 42 ;
+X = gaziantep,
+C = 45 ;
+X = mugla,
+C = 52 ;
+X = bursa,
+C = 31 ;
+X = rize,
+C = 26 ;
+X = izmir,
+C = 24 ;
+X = van,
+C = 35 ;
+X = izmir,
+C = 37 ;
+X = gaziantep,
+C = 38 ;
+X = mugla,
+C = 45 ;
+X = bursa,
+C = 41 ;
+X = rize,
+C = 35 ;
+X = van,
+C = 34 ;
+X = gaziantep,
+C = 37 ;
+X = mugla,
+C = 44 ;
+X = bursa,
+C = 28 ;
+false.
+
+?- 
+|    
