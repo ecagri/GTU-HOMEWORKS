@@ -1,0 +1,79 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    flex-grow: 1;
+}
+
+h1 {
+    color: #fff; 
+    background: linear-gradient(45deg, #4CAF50, #2196F3); 
+    padding: 10px;
+    width: calc(100% - 40px); 
+    font-size: 24px; 
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+
+#image-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    flex-grow: 1; 
+}
+
+img {
+    width: calc(10% - 20px);
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    border: 2px solid #ff0000; 
+    box-sizing: border-box; 
+}
+
+img:hover {
+    transform: scale(1.70);
+    filter: brightness(1.2); 
+}
+
+img.selected {
+    border: 5px solid rgb(0, 255, 0);
+    filter: brightness(2); 
+}
+
+button {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 10px;
+    margin-right: 52px;
+    padding: 10px;
+    width: calc(10% - 20px);
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: #fff; 
+    background: linear-gradient(45deg, #4CAF50, #2196F3); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+button:hover {
+    background: linear-gradient(45deg, #2196F3, #4CAF50);
+    transform: scale(1.05);
+}
+

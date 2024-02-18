@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between; /* Use space-between to push items to opposite ends */
+            align-items: center; /* Align items vertically at the center */
+            padding: 10px;
+            background-color: #4CAF50; /* Updated background color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increased box shadow for a more prominent effect */
+            border-bottom: 2px solid #333; /* Border at the bottom for separation */
+        }
+
+        nav a:first-child{
+            margin-right: auto;
+            text-decoration: none;
+            color: #fff; /* Updated text color to white for better contrast */
+            border-radius: 6px; /* Slightly rounded corners for a softer look */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions for background color and text color */
+        }
+        nav a:not(:first-child){
+            margin-left: 10px;
+            text-decoration: none;
+            color: #fff; /* Updated text color to white for better contrast */
+            padding: 10px 16px; /* Increased padding for a more comfortable touch */
+            border-radius: 6px; /* Slightly rounded corners for a softer look */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions for background color and text color */
+        }
+
+        nav a:hover:not(:first-child){
+            background-color: #333; /* Darker background color on hover for all links except the first child */
+            color: #fff; /* Text color turns to white on hover for all links except the first child */
+        }
+
+        /* Optional: Add a subtle animation for the last link */
+        nav a:hover {
+            transform: scale(1.1); /* Scale up on hover for a subtle animation */
+        }
+        
+        #content-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+        }
+
+        #image-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+        }
+
+        #image-container:hover {
+            transform: scale(1.0);
+        }
+
+        #centered-image {
+            max-width: 100%;
+            width: 600px;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        #like-btn, #dislike-btn, #info-btn , #search-btn{
+            margin: 10px;
+            padding: 15px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+
+        #like-btn:hover, #dislike-btn:hover, #info-btn:hover, #search-btn:hover{
+            transform: scale(1.1);
+        }
+
+        #like-btn {
+            background: #00CC00;
+            border-radius: 50%;
+        }
+
+        #like-btn:hover {
+            background: #4CAF50;
+        }
+
+        #info-btn{
+            background-color: #0000FF;
+            border-radius: 50%;
+        }
+
+        #info-btn:hover{
+            background-color: #0000CC;
+        }
+
+        #search-btn{
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        #search-btn:hover{
+            background-color: black;
+        }
+
+        #dislike-btn {
+            background: #FF0000;
+            border-radius: 50%;
+        }
+
+        #dislike-btn:hover {
+            background-color: #CC0000;
+        }
+
+        #action-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        #quit-btn, #favorites-btn {
+            margin: 10px;
+            padding: 15px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+
+        #quit-btn {
+            background-color: #d9534f;
+            color: #fff;
+        }
+
+        #quit-btn:hover {
+            background-color: #c9302c;
+        }
+
+        #favorites-btn {
+            background-color: #337ab7;
+            color: #fff;
+        }
+
+        #favorites-btn:hover {
+            background-color: #286090;
+        }
+
+        #leaderboard-container {
+            max-width: 20%;
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-left: 20px; /* Add margin to separate the leaderboard from the image container */
+        }
+
+        #leaderboard {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        #leaderboard th, #leaderboard td {
+            padding: 11.85px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+            max-width: 100%;
+        }
+
+        #leaderboard th {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        #leaderboard tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #contents_table {
+            max-width: 600px;
+            height: 500px;
+            min-width: 600px;
+            border-collapse: collapse;
+            rotate: y 90deg;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #f00;
+        }
+
+        p {
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 0px;
+        }
+        #progress-container{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 75px;
+            height: 75px;
+        }
+        td:not(:last-child) {
+            border-right: 1px solid #dddddd;
+        }
+
+        .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 80px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .2s;
+        }
+
+        .label {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) translateX(20px);
+            color: #000;
+            padding-left: 10px;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(50px);
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        input:checked + .slider + .label {
+            color: #fff;
+            padding-right: 30px; /* Adjust the padding to accommodate the text */
+            right: 30px;
+        }
+        #advanced{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #scenearios {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+            margin-top: 10px;
+            appearance: none;
+        }
+
+        #scenearios:hover {
+            background-color: #eaeaea;
+        }
+
+        /* Optional: Style the dropdown arrow */
+        #scenearios::after {
+            content: '\25BC'; /* Unicode character for a down arrow */
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+        button {
+            margin-top: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #cancelBtn {
+            background-color: #ccc;
+            color: #333;
+            width: 50%;
+        }
+
+        #applyBtn {
+            background-color: #4CAF50;
+            color: #fff;
+            width: 50%;
+        }
+
+        #buttonContainer{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        #list-container {
+            width: 500px;
+            height: 530px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .list-item {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #f5f5f5; /* Light background color */
+            border-radius: 8px; /* Rounded corners */
+            padding: 15px; /* Add padding for a cleaner look */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+            transition: background-color 0.3s ease; /* Smooth background color transition */
+        }
+
+        .list-item:hover {
+            background-color: #e0e0e0; /* Darker background on hover */
+        }
+
+        .volume-slider {
+            width: 300px;
+            background: linear-gradient(to right, #ff8c00, #ff4169); /* Gradient background */
+            border-radius: 5px; /* Rounded slider */
+            overflow: hidden; /* Hide overflowing content */
+        }
+
+        .volume-value {
+            margin-left: 10px;
+            color: #4caf50; /* Green color for volume value */
+            font-weight: bold; /* Bold font for emphasis */
+        }
+
+        .key-element {
+            min-width: 300px;
+            max-width: 300px;
+            text-align: right;
+            padding-right: 10px;
+            background-color: #3498db; /* Blue background color for key element */
+            color: #fff; /* White text color */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Smooth background color transition */
+        }
+
+        .key-element:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="home.html"><img src="logo.ico" alt="" style="max-height: 50px;"></a>
+        <a href="favourites.html">Favorites</a>
+        <a href="about.html">About</a>
+        <a href="index.html">Quit</a>
+    </nav>
+
+    <!-- Main content -->
+    <div id="content-container">
+        <div id="image-container">
+            <img id="centered-image" src="default.jpg" alt="Centered Image">
+            <table id="contents_table" hidden>
+                <thead>
+                    <tr>
+                        <th>Contents</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            <br>
+            <button id="info-btn"><img src="question mark.png" alt="info" width="32px" height="32px"></button>
+            <button id="search-btn"><img src="search.ico" alt="search" width="32px" height="32px"></button>
+        </div>
+        <div>
+            <div id="list-container"></div>
+        </div>
+    </div>
+
+    <script type="module" src="test.js"></script>
+
+</body>
+</html>

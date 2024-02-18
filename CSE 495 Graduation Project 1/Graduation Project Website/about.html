@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script type="module" src=""></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 10px;
+            background-color: #4CAF50; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            border-bottom: 2px solid #333;
+        }
+
+        nav a:first-child{
+            margin-right: auto;
+            text-decoration: none;
+            color: #fff; 
+            border-radius: 6px; 
+            transition: background-color 0.3s ease, color 0.3s ease; 
+        }
+        nav a:not(:first-child){
+            margin-left: 10px;
+            text-decoration: none;
+            color: #fff; 
+            padding: 10px 16px; 
+            border-radius: 6px; 
+            transition: background-color 0.3s ease, color 0.3s ease; 
+        }
+
+        nav a:hover:not(:first-child){
+            background-color: #333; 
+            color: #fff;
+        }
+
+       
+        nav a:hover {
+            transform: scale(1.1); 
+        }
+        
+        #content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            max-height: 100%;
+            border-radius: 6px; 
+            flex-direction: column;
+        }
+
+        #quit-btn, #favorites-btn {
+            margin: 10px;
+            padding: 15px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+
+        #quit-btn {
+            background-color: #d9534f;
+            color: #fff;
+        }
+
+        #quit-btn:hover {
+            background-color: #c9302c;
+        }
+
+        #favorites-btn {
+            background-color: #337ab7;
+            color: #fff;
+        }
+
+        #favorites-btn:hover {
+            background-color: #286090;
+        }
+        h1 {
+            position: fixed;
+            color: #3498db;
+            margin-bottom: 5px;
+            align-self: center;
+            top: 30%;
+        }
+        p{
+            position: fixed;
+            color: #555;
+            font-size: 20px; 
+            line-height: 1.5; 
+            text-align: center;
+            width: 60%;
+            align-self: center;
+            margin: auto;
+            top: 40%;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="home.html"><img src="logo.ico" alt="" style="max-height: 50px"></a>
+        <a href="favourites.html">Favorites</a>
+        <a href="about.html">About</a>
+        <a href="index.html">Quit</a>
+    </nav>
+
+    <!-- Main content -->
+    <div id="content-container">
+        <h1>Welcome to Image Recommender</h1>
+        <p>
+            Greetings! I am Çağrı Çaycı, and I am thrilled to present my graduation project an
+            image recommendation system hosted on a user-friendly website. The core objective
+            of this system is to identify and recommend images that are most likely to resonate
+            with users within a given dataset. Leveraging the capabilities of the Google Vision API, the
+            system labels randomly generated images, establishing a robust foundation for accurate
+            recommendations. The website serves as an interactive showcase, allowing users to witness 
+            the system's process in action. The working principle involves the generation of images, their 
+            meticulous labeling using Google Vision API, and subsequent scoring through an efficient algorithm. 
+            The culmination is the presentation of a single image with the highest score—a meticulously curated recommendation tailored 
+            to the user's preferences. 
+        </p>
+    </div>
+
+</body>
+</html>

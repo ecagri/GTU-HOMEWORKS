@@ -1,10 +1,8 @@
-9
-wall wall wall peg peg peg wall wall wall 
-wall wall wall peg peg peg wall wall wall 
-wall wall wall peg peg peg wall wall wall 
-peg peg peg peg peg peg peg peg peg 
-peg peg peg peg empty peg peg peg peg 
-peg peg peg peg peg peg peg peg peg 
-wall wall wall peg peg peg wall wall wall 
-wall wall wall peg peg peg wall wall wall 
-wall wall wall peg peg peg wall wall wall 
+7
+wall wall peg peg peg wall wall 
+wall peg peg peg peg peg wall 
+peg peg peg empty peg peg peg 
+peg peg peg empty peg peg peg 
+peg peg peg peg empty empty peg 
+wall peg peg peg empty empty wall 
+wall wall peg peg peg wall wall 
